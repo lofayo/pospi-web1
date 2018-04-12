@@ -1,0 +1,269 @@
+html {
+    font-size: 12px;
+    width: 100%;
+    height: 100%;
+    min-width: 1366px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-width: 80rem;
+    /*max-width: 120rem;*/
+    /*margin: 0 auto;*/
+    padding-top: 6.17rem;
+}
+
+header {
+    height: 6.17rem;
+    line-height: 6.17rem;
+    border-bottom: 1px solid #ECECEC;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 6;
+    background: white;
+}
+
+.header_content {
+    height: 100%;
+    width: 80rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: PingFangSC-Semibold;
+    font-size: 14px;
+    color: #212128;
+    letter-spacing: 0;
+    text-align: left;
+    font-weight: bold;
+}
+
+
+.header_nav {
+    height: 100%;
+    cursor: pointer;
+}
+
+.nav_item {
+    display: inline-block;
+    height: 100%;
+    position: relative;
+}
+
+.nav_item>a {
+    color: black;
+    padding: 0 2.5rem;
+}
+
+.nav_item span {
+    display: inline-block;
+    border-bottom: 0.5rem solid white;
+    line-height: 62px;
+}
+
+.nav_item .active {
+    border-bottom: 0.5rem solid #4286F3;
+}
+
+.nav_item_list {
+    position: absolute;
+    left: 0;
+    top: 6.17rem;
+    padding: 1.67rem;
+    background: #4286F3;
+    z-index: 5;
+    border: 11px solid transparent;
+    background-clip: padding-box;
+    border-radius: 15px;
+}
+
+.nav_item_list li {
+    width: 20.83rem;
+    height: 4.25rem;
+}
+
+.nav_item_list img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.header_nav>li:last-child a {
+    padding-right: 0;
+}
+
+.header_nav>li:last-child span {
+    line-height: 1;
+    padding: 0.86rem 1.68rem;
+    background: #4286F3;
+    border-radius: 100px;
+    color: white;
+    border: none;
+}
+
+img {
+    border: none;
+    /*去掉图片下方默认3px*/
+    display: block;
+    margin: 0 auto;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    height: 35.17rem;
+    margin-top: 11.434rem;
+}
+
+.short_line_blue {
+    display: inline-block;
+    width: 8rem;
+    height: 0.5rem;
+    background: #4286F3;
+    border-radius: 100px;
+}
+
+.mini_short_line_blue {
+    display: inline-block;
+    width: 3rem;
+    height: 0.5rem;
+    background: #4286F3;
+    border-radius: 100px;
+}
+
+.short_line_dark {
+    width: 8rem;
+    height: 0.5rem;
+    background: #ECECEC;
+    border-radius: 100px;
+}
+
+.tip_red {
+    display: inline-block;
+    width: 5rem;
+    height: 2.17rem;
+    line-height: 2.17rem;
+    background: #EB4537;
+    border-radius: 7px;
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    color: #FFFFFF;
+
+    text-align: center;
+}
+
+.know_more {
+    display: inline-block;
+    text-align: center;
+    width: 13.33rem;
+    height: 4.33rem;
+    line-height: 4.33rem;
+    background: #4286F3;
+    border-radius: 100px;
+    font-family: PingFangSC-Semibold;
+    font-size: 18px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.big_know_more {
+    display: inline-block;
+    text-align: center;
+    width: 19.17rem;
+    height: 4.67rem;
+    line-height: 4.67rem;
+    background: #4286F3;
+    border-radius: 100px;
+    font-family: PingFangSC-Semibold;
+    font-size: 18px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.know_more>a,
+.big_know_more>a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.footer_hr {
+    width: 100%;
+    height: 0.08rem;
+    background: #EDEEF4;
+}
+
+.about_us {
+    width: 80rem;
+    margin: 7.14rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_us li {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #8C8C8C;
+
+    line-height: 34px;
+}
+
+.about_us li:first-child {
+    font-family: PingFangSC-Semibold;
+    font-size: 14px;
+    color: #464855;
+
+    font-weight: bold;
+}
+
+.about_us ul:last-child li {
+    float: left;
+}
+
+.about_us ul:last-child li+li {
+    margin-left: 1.69rem;
+}
+
+.about_us ul:last-child img {
+    width: 4rem;
+    height: 4rem;
+    display: inline-block;
+}
+
+.copyright {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #868E96;
+    letter-spacing: -0.5px;
+    text-align: center;
+    height: 6.745rem;
+    line-height: 6.745rem;
+}
+
+.html_unscroll {
+    height: 100%;
+    overflow: hidden;
+}

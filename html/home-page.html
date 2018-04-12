@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- <link rel="stylesheet" type="text/css" href="../css/Normalize.css"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> -->
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <style type="text/css">
+        .banner {
+            height: 60rem;
+            background: url('../images/img_home_banner@2x.png') no-repeat center / cover;
+            overflow: hidden;
+            position: relative;
+        }
+        /*.banner::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.7;
+            background: #212529;
+            z-index: 1;
+        }*/
+
+        .banner_content {
+            color: white;
+            width: 80rem;
+            height: 25.92rem;
+            margin: 16.83rem auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .banner_content p:nth-child(1) {
+            font-family: PingFangSC-Medium;
+            font-size: 64px;
+            color: #FFFFFF;
+            letter-spacing: 0;
+            text-align: left;
+        }
+
+        .banner_content p:nth-child(3) {
+            font-family: PingFangSC-Regular;
+            font-size: 24px;
+            color: #FFFFFF;
+            letter-spacing: 5.33px;
+        }
+
+        .content_item {
+            overflow: hidden;
+        }
+
+        .content_item.dark_bg {
+            background: #F6F6F6;
+        }
+
+        .content_item_text {
+            width: 80rem;
+            margin: 11.46rem auto;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .content_item_text>p {
+            margin-bottom: 4.67rem;
+        }
+
+        .content_item_text>p:last-child {
+            margin-bottom: 0;
+        }
+
+        .content_item_text>p:nth-child(1) {
+            font-family: PingFangSC-Semibold;
+            font-size: 36px;
+            color: #333333;
+            letter-spacing: 0;
+            text-align: center;
+        }
+
+        .content_item_text>p:nth-child(3) {
+            font-family: PingFangSC-Regular;
+            font-size: 14px;
+            color: #333333;
+            letter-spacing: 3.11px;
+            text-align: center;
+        }
+
+        .has_bg>.content_item_text>p {
+            color: white;
+        }
+
+        footer {
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header_content">
+            <a href="home-page.html" style="display: flex;"><img class="logo" src="../images/img_Navigation_LOGO.svg"></a>
+            <ul class="header_nav">
+                <li class="nav_item"><a href="javascript:void(0)"><span>产品与服务</span></a>
+                    <ul class="nav_item_list" style="display: none;">
+                        <li><a href="all-in-one.html"><img src="../images/icon_Navigation_All-in-One@2x.png" data-src="../images/icon_Navigation_All-in-One_Selected@2x.png"></a></li>
+                        <li><a href="solution.html"><img src="../images/icon_Navigation_Solution@2x.png" data-src="../images/icon_Navigation_Solution_Selected@2x.png"></a></li>
+                        <li><a href="payment.html"><img src="../images/icon_Navigation_payment@2x.png" data-src="../images/icon_Navigation_payment_Selected@2x.png"></a></li>
+                        <li><a href="access.html"><img src="../images/icon_Navigation_Access@2x.png" data-src="../images/icon_Navigation_Access_Selected@2x.png"></a></li>
+                        <li><a href="service.html"><img src="../images/icon_Navigation_service@2x.png" data-src="../images/icon_Navigation_service_Selected@2x.png"></a></li>
+                    </ul>
+                </li>
+                <li class="nav_item"><a href="customer.html"><span>典型客户</span></a>
+                </li>
+                <li class="nav_item"><a href="source.html"><span>资源</span></a>
+                </li>
+                <li class="nav_item"><a href="javascript:void(0)">
+                    <span>硬件</span></a>
+                    <ul class="nav_item_list" style="display: none;">
+                        <li><a href="mobile-pos.html"><img src="../images/icon_Navigation_mpos@2x.png" data-src="../images/icon_Navigation_mpos_Selected@2x.png" alt=""></a></li>
+                        <li><a href="desktop-check.html"><img src="../images/icon_Navigation_Desktop@2x.png" data-src="../images/icon_Navigation_Desktop_Selected@2x.png" alt=""></a></li>
+                        <li><a href="printer.html"><img src="../images/icon_Navigation_Printer@2x.png" data-src="../images/icon_Navigation_Printer_Selected@2x.png" alt=""></a></li>
+                    </ul>
+                </li>
+                <li class="nav_item"><a href="javascript:void(0)"><span>关于</span></a>
+                    <ul class="nav_item_list" style="display: none;">
+                        <li><a href="introduce.html"><img src="../images/icon_Navigation_introduce@2x.png" data-src="../images/icon_Navigation_introduce_Selected@2x.png"></a></li>
+                        <li><a href="parter.html"><img src="../images/icon_Navigation_Partner@2x.png" data-src="../images/icon_Navigation_Partner_Selected@2x.png"></a></li>
+                        <li><a href="news.html"><img src="../images/icon_Navigation_Journalism@2x.png" data-src="../images/icon_Navigation_Journalism_Selected@2x.png"></a></li>
+                        <li><a href="join-us.html"><img src="../images/icon_Navigation_recruit@2x.png" data-src="../images/icon_Navigation_recruit_Selected@2x.png"></a></li>
+                    </ul>
+                </li>
+                <li class="nav_item"><a href="contact-us.html"><span>联系我们</span></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="content">
+        <section class="banner">
+            <div class="banner_content">
+                <p>像APPLE收银</p>
+                <p class="short_line_blue"></p>
+                <p>最直观简约的零售方案-移动支付</p>
+                <p class="big_know_more"><a href="like-apple.html">了解更多</a></p>
+                <p>
+                    <img src="../images/icon_Home_Journalism@2x.png" style="width: 80px;height: 80px;float: right;margin-bottom: -80px;box-shadow: 0 20px 40px 0 rgba(66,134,243,0.40);">
+                </p>
+            </div>
+        </section>
+        <section class="content_item">
+            <div class="content_item_text">
+                <p>实体店的生存之道：
+                    <br> 要么方便到不用占用你任何时间，要么能给你极致的体验。
+                </p>
+                <p class="short_line_blue"></p>
+                <p>互联网技术节约了消费者时间，让他们更加敏捷的做出对比和选择，这就形成了消费者更加专业化的趋势，这种变化每个零售商都要深刻认知，如果我们不能适应这种趋势，那么我们将被线上远远抛弃。</p>
+            </div>
+        </section>
+        <section class="content_item has_bg" style="background: url('../images/img_home_img1@2x.png') no-repeat center / cover;">
+            <div class="content_item_text">
+                <p>能够证明品质的不只有时间，
+                    <br>还有客户的选择
+                </p>
+                <p class="short_line_blue"></p>
+                <p>
+                    POSPi使用先进的技术将软硬件整合在一起，集成一套全新的零售方案，在提高工作效率的同时提升客户购物体验，以此来推动销售并降低运营成本。 POSPi致力于为客户打造最合适的产品，定制化开发使每一个产品独一无二，旨在为客户带来最好的产品及最佳的体验。
+                </p>
+            </div>
+        </section>
+        <section class="content_item">
+            <div class="content_item_text">
+                <p>我们的几个客户
+                </p>
+                <p class="short_line_blue"></p>
+                <p style="background: white url('../images/img_home_img2@2x.png') no-repeat center / 100%;">
+                    <img src='../images/img_home_img2@2x.png' style="position: relative;z-index: -1; width: 100%;">
+                </p>
+                <p class="big_know_more"><a href="customer.html">了解更多</a></p>
+            </div>
+        </section>
+        <section class="content_item dark_bg">
+            <div class="content_item_text">
+                <p>智能零售 All-in-One 解决方案</p>
+                <p class="short_line_blue"></p>
+                <p>通过 POSPi 的 iPhone、iPod touch、iPad 的移动应用程序，可在店铺任意角落完成订单，使店员在销售过程中为顾客带来更加专业、贴心的服务。 </p>
+                <p style="background: white url('../images/img_home_img3@2x.png') no-repeat center / 100%;">
+                    <img src='../images/img_home_img3@2x.png' style="position: relative;z-index: -1; width: 100%;">
+                </p>
+                <p class="big_know_more"><a href="all-in-one.html">了解更多</a></p>
+            </div>
+        </section>
+        <section class="content_item">
+            <div class="content_item_text">
+                <p>全渠道支付接口，一站式服务平台
+                </p>
+                <p class="short_line_blue"></p>
+                <p>PassPi提供简单、安全、可靠的传统与移动互联网金融支付方式，包括APi、SDK、 传统POS、智能POS等各类支付终端集成解决方案。全面的支付解决方案和丰富的集成支付经验，让我们的客户在移动互联网时代赢得先机!</p>
+                <p class="big_know_more"><a href="payment.html">了解更多</a></p>
+            </div>
+        </section>
+        <section class="content_item has_bg" style="background: url('../images/img_home_img4@2x.png') no-repeat center / cover;">
+            <div class="content_item_text">
+                <p>无缝接入</p>
+                <p class="short_line_blue"></p>
+                <p>传统国际一线品牌零售是基于PC 的解决方案，Mobile POS 可以低成本无缝接入其已有的ERP、CRM以及收银系统，提供简单高效易行的移动收银支付方案。</p>
+                <p class="big_know_more"><a href="access.html">了解更多</a></p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <hr class="footer_hr">
+        <div class="about_us">
+            <ul>
+                <li><img src="../images/img_bottom_logo.svg"></li>
+            </ul>
+            <ul>
+                <li>关于我们</li>
+                <li>关于POSPi</li>
+                <li>合作伙伴</li>
+                <li>新闻报道</li>
+                <li>加入我们</li>
+            </ul>
+            <ul>
+                <li>联系我们</li>
+            </ul>
+            <ul>
+                <li style="color: #8C8C8C;">关注我们的社区</li>
+                <li style="clear: left;margin-left: 0;"><img src="../images/img_facebook_logo_Selected.svg" alt=""></li>
+                <li><img src="../images/img_LinkedIn_logo_Selected.svg" alt=""></li>
+                <li><img src="../images/img_WeChat_logo_Selected.svg" alt=""></li>
+                <li><img src="../images/img_youku_logo_Selected.svg" alt=""></li>
+                <li><img src="../images/img_youtube_logo_Selected.svg" alt=""></li>
+            </ul>
+        </div>
+        <hr class="footer_hr">
+        <div class="copyright">
+            © All rights reserved. | ICP证：沪ICP备15028992号-1
+        </div>
+    </footer>
+    <!-- <script src="../js/jquery-3.3.1.js"></script> -->
+    <!-- <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script> -->
+    <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../js/interact.js"></script>
+</body>
+
+</html>

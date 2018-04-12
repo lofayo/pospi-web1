@@ -1,0 +1,295 @@
+.content_header_nav {
+    height: 60rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.content_header_nav>section {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.bg_section {
+    height: 60rem;
+
+    overflow: hidden;
+}
+
+.bg_section::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    background: #212529;
+    z-index: 1;
+}
+
+.bg_content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    width: 80rem;
+    height: 25.92rem;
+    margin: 16.83rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.bg_content>p:first-child {
+    font-family: PingFangSC-Medium;
+    font-size: 48px;
+    color: #FFFFFF;
+
+    text-align: left;
+}
+
+p {
+    margin-bottom: 3.335rem;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+.special.bg_content p:nth-child(1) {
+    font-family: PingFangSC-Regular;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.special.bg_content p:nth-child(3) {
+    font-family: PingFangSC-Medium;
+    font-size: 40px;
+    color: #FFFFFF;
+
+    text-align: left;
+}
+
+nav,
+.text_nav {
+    width: 80rem;
+    margin: 3.335rem auto;
+    overflow: hidden;
+}
+
+nav li {
+    width: 7.33rem;
+    height: 3.33rem;
+    line-height: 3.33rem;
+    font-family: PingFangSC-Semibold;
+    font-size: 14px;
+    color: #B3B3B3;
+    margin-right: 1rem;
+    text-align: center;
+    display: inline-block;
+}
+
+.about_us_nav a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #B3B3B3;
+}
+
+.about_us_nav .nav_active {
+    border-radius: 8.33rem;
+    background: #EFEFEF;
+}
+
+.nav_active a {
+    color: #333333;
+    font-weight: bold;
+}
+
+.text_nav>section {
+    width: 100%;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #333333;
+
+    line-height: 28px;
+}
+
+.text_title {
+    font-family: PingFangSC-Semibold;
+    font-size: 42px;
+    color: #000000;
+
+    line-height: 64px;
+}
+
+
+
+.content_header_nav .active,
+.text_nav .active,
+.job_inviting .active {
+    display: block;
+}
+
+.text_nav {
+    margin-bottom: 0;
+}
+
+.news_section li {
+    padding: 1.67rem;
+    padding-left: 0;
+    display: flex;
+    border-top: 0.08rem solid #EBEBEB;
+}
+
+.news_section li:last-child {
+    border-bottom: 0.08rem solid #EBEBEB;
+}
+
+.news_img {
+    width: 16.67rem;
+    height: 12.5rem;
+    border: 1px solid #DEDEDE;
+    border-radius: 2px;
+    margin-right: 1.67rem;
+    flex: none;
+}
+
+.news_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news_text p {
+    margin: 0;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #B3B3B3;
+
+    line-height: 1.67rem;
+}
+
+.news_text p:nth-child(1) {
+    font-family: PingFangSC-Semibold;
+    font-size: 20px;
+    color: #333333;
+
+    font-weight: bold;
+    line-height: 2.33rem;
+}
+
+
+.join_us_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.join_us_list li {
+    width: 40rem;
+    padding: 3.335rem;
+    box-sizing: border-box;
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    color: #B3B3B3;
+    letter-spacing: 3px;
+    position: relative;
+    cursor: pointer;
+}
+
+.join_us_list li:hover {
+    background: #F6F6F6;
+    border-radius: 8px;
+}
+
+.join_us_list li p {
+    margin: 0;
+}
+
+.join_us_title {
+    font-family: PingFangSC-Medium;
+    font-size: 24px;
+    color: #333333;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+
+
+.join_us_list img {
+    position: absolute;
+    right: 3.335rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.job_inviting {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 78%;
+    height: 100%;
+    z-index: 7;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #333333;
+    line-height: 30px;
+}
+
+.job_inviting::before {
+    content: '';
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.20);
+}
+
+.job_inviting li {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: url('../images/img_recruit_bg.png') no-repeat center / cover;
+    /*background: #fff;*/
+    position: relative;
+    z-index: 4;
+    overflow: hidden;
+}
+
+.close {
+    position: absolute;
+    top: 3.335rem;
+    right: 3.335rem;
+    cursor: pointer;
+}
+
+.job_intro {
+    margin: 8rem 29%;
+}
+
+.job_logo {
+    margin-bottom: 0;
+}
+
+.job_logo img {
+    transform: translate(-66%);
+    margin: 0;
+}
+
+.job_title {
+    font-family: PingFangSC-Semibold;
+    font-size: 24px;
+    color: #333333;
+    font-weight: bold;
+}
+
+.job_content_title {
+    font-family: PingFangSC-Semibold;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+}

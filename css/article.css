@@ -1,0 +1,56 @@
+.article_content {
+    width: 60.83rem;
+    margin: 0 auto;
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    color: #434959;
+
+    line-height: 2.08rem;
+}
+
+.article_head {
+    text-align: center;
+    padding: 3.1rem 0;
+}
+
+p {
+    margin-top: 3.1rem;
+}
+
+p>img {
+    display: block;
+    margin: auto;
+    text-align: center;
+    max-width: 100%;
+}
+
+.article_title {
+    font-family: PingFangSC-Medium;
+    font-size: 36px;
+    color: #434959;
+    text-align: center;
+    line-height: 4.17rem;
+}
+
+.article_author {
+    line-height: 2rem;
+}
+
+.article_author span:first-of-type {
+    font-family: PingFangSC-Semibold;
+    font-size: 20px;
+    color: #434959;
+
+    text-align: center;
+}
+
+.article_author span:nth-of-type(2) {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #B3B3B3;
+}
+
+.article_content ul li {
+    list-style: square;
+    margin-top: 3.1rem;
+}

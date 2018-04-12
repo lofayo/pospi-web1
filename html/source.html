@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- <link rel="stylesheet" type="text/css" href="../css/Normalize.css"> -->
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <style type="text/css">
+        .bg_section {
+            height: 60rem;
+            background: url('../images/img_article_banner@2x.png') no-repeat center / cover;
+            overflow: hidden;
+            position: relative;
+        }
+        /*        .bg_section::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.7;
+            background: #212529;
+            z-index: 1;
+        }*/
+
+        .bg_content {
+            width: 80rem;
+            height: 25.92rem;
+            margin: 16.83rem auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .bg_content p:nth-child(1) {
+            font-family: PingFangSC-Regular;
+            font-size: 20px;
+            color: #FFFFFF;
+        }
+
+        .bg_content p:nth-child(3) {
+            font-family: PingFangSC-Medium;
+            font-size: 40px;
+            color: #FFFFFF;
+
+            text-align: left;
+        }
+
+        .article_kind_1 .special_article {
+            margin: 82px auto 0;
+            padding: 3.335rem;
+            width: 80rem;
+            height: 35rem;
+            box-sizing: border-box;
+            background: #F6F6F6;
+            border-radius: 6px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .special_article .special_img {
+            background: url('../images/img_article1_img@2x.png') no-repeat center / contain;
+            width: 39.58rem;
+            height: 28.33rem;
+            flex: none;
+        }
+
+        .special_article .special_content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30.42rem;
+            flex: none;
+        }
+
+        .special_content>p:nth-child(2) {
+            font-family: PingFangSC-Medium;
+            font-size: 30px;
+            color: #333333;
+        }
+
+        .special_content p:nth-child(3) {
+            font-family: PingFangSC-Regular;
+            font-size: 14px;
+            color: #B3B3B3;
+
+            line-height: 25px;
+        }
+
+        .author {
+            display: flex;
+        }
+
+        .author img {
+            display: inline-block;
+            margin: 0;
+        }
+
+        .author p {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-family: PingFangSC-Regular;
+            font-size: 14px;
+            color: #333333;
+
+            margin-left: 6px;
+        }
+
+        .article_kind_2 {
+            width: 80rem;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .article_kind_2 .article {
+            margin-top: 3.335rem;
+            background: #F6F6F6;
+            border-radius: 6px;
+            padding: 1.7rem;
+            box-sizing: border-box;
+            width: 25rem;
+            height: 40rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            transition: all .5s;
+        }
+
+        .article_kind_2 .article:hover {
+            transform: translate3d(0, -4px, 0);
+            box-shadow: 0 15px 20px 0 #ccc;
+            background: #fff;
+        }
+        /*这个主要为了父级flex时，添加一个相同宽度的flex-item*/
+
+        .article_kind_2::after {
+            content: '';
+            margin-top: 3.335rem;
+            border-radius: 6px;
+            padding: 1.7rem;
+            box-sizing: border-box;
+            width: 25rem;
+            height: 40rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        /*        .article+.article {
+            margin-left: 1.5rem;
+        }*/
+
+        .article_img {
+            width: 21.67rem;
+            height: 12rem;
+        }
+
+        .article div:nth-child(2) {
+            font-family: PingFangSC-Medium;
+            font-size: 18px;
+            color: #333333;
+            line-height: 30px;
+        }
+
+        .article div:nth-child(3) {
+            font-family: PingFangSC-Medium;
+            font-size: 14px;
+            color: #B3B3B3;
+
+            line-height: 25px;
+            height: 10.42rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header_content">
+            <a href="home-page.html" style="display: flex;"><img class="logo" src="../images/img_Navigation_LOGO.svg"></a>
+            <ul class="header_nav">
+                <li class="nav_item"><a href="javascript:void(0)"><span>产品与服务</span></a>
+                    <ul class="nav_item_list" style="display: none;">
+                        <li><a href="all-in-one.html"><img src="../images/icon_Navigation_All-in-One@2x.png" data-src="../images/icon_Navigation_All-in-One_Selected@2x.png"></a></li>
+                        <li><a href="solution.html"><img src="../images/icon_Navigation_Solution@2x.png" data-src="../images/icon_Navigation_Solution_Selected@2x.png"></a></li>
+                        <li><a href="payment.html"><img src="../images/icon_Navigation_payment@2x.png" data-src="../images/icon_Navigation_payment_Selected@2x.png"></a></li>
+                        <li><a href="access.html"><img src="../images/icon_Navigation_Access@2x.png" data-src="../images/icon_Navigation_Access_Selected@2x.png"></a></li>
+                        <li><a href="service.html"><img src="../images/icon_Navigation_service@2x.png" data-src="../images/icon_Navigation_service_Selected@2x.png"></a></li>
+                    </ul>
+                </li>
+                <li class="nav_item"><a href="customer.html"><span>典型客户</span></a>
+                </li>
+                <li class="nav_item"><a href="source.html"><span>资源</span></a>
+                </li>
+                <li class="nav_item"><a href="javascript:void(0)">
+                    <span>硬件</span></a>
+                    <ul class="nav_item_list" style="display: none;">
+                        <li><a href="mobile-pos.html"><img src="../images/icon_Navigation_mpos@2x.png" data-src="../images/icon_Navigation_mpos_Selected@2x.png" alt=""></a></li>
+                        <li><a href="desktop-check.html"><img src="../images/icon_Navigation_Desktop@2x.png" data-src="../images/icon_Navigation_Desktop_Selected@2x.png" alt=""></a></li>
+                        <li><a href="printer.html"><img src="../images/icon_Navigation_Printer@2x.png" data-src="../images/icon_Navigation_Printer_Selected@2x.png" alt=""></a></li>
+                    </ul>
+                </li>
+                <li class="nav_item"><a href="javascript:void(0)"><span>关于</span></a>
+                    <ul class="nav_item_list" style="display: none;">
+                        <li><a href="introduce.html"><img src="../images/icon_Navigation_introduce@2x.png" data-src="../images/icon_Navigation_introduce_Selected@2x.png"></a></li>
+                        <li><a href="parter.html"><img src="../images/icon_Navigation_Partner@2x.png" data-src="../images/icon_Navigation_Partner_Selected@2x.png"></a></li>
+                        <li><a href="news.html"><img src="../images/icon_Navigation_Journalism@2x.png" data-src="../images/icon_Navigation_Journalism_Selected@2x.png"></a></li>
+                        <li><a href="join-us.html"><img src="../images/icon_Navigation_recruit@2x.png" data-src="../images/icon_Navigation_recruit_Selected@2x.png"></a></li>
+                    </ul>
+                </li>
+                <li class="nav_item"><a href="contact-us.html"><span>联系我们</span></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="bg_section">
+        <div style="position: absolute;left: 0;top: 0;z-index: 2;color: white;width: 100%;height: 100%;">
+            <div class="bg_content">
+                <p>2018.03.26 作者：<span style="color: red;">Brain</span></p>
+                <p class="tip_red">精选</p>
+                <p>像APPLE收银 （最直观简约的零售方案-移动支付）</p>
+                <p class="know_more"><a href="article1.html">了解更多</a></p>
+            </div>
+        </div>
+    </section>
+    <section class="article_kind_1">
+        <a href="article1.html" class="special_article">
+            <div class="special_img">
+            </div>
+            <div class="special_content">
+                <p class="tip_red">NEW</p>
+                <p>像APPLE收银 （最直观简约的零售方案-移动支付）</p>
+                <p>当你走进Apple Store，你可能会发现，每一个店员都在同时扮演导购员、客服和收银员的角色，而且顾客会在不知不觉中了解产品并完成购买。</p>
+                <div class="author">
+                    <img src="../images/img_ProfilePhoto_Brain@2x.png" style="width: 40px;height: 40px;">
+                    <p>
+                        <span>Brain</span>
+                        <span>2018 年 3 月 26 日</span>
+                    </p>
+                </div>
+            </div>
+        </a>
+    </section>
+    <section class="article_kind_2">
+        <a href="article2.html" class="article">
+            <div class="article_img" style="background: url('../images/img_article2_img1.svg') no-repeat center / cover;">
+            </div>
+            <div>
+                The Must-have In-Store Technologies in Digital Era
+            </div>
+            <div>
+                The relationship between retailers and consumers has considerably evolved. Consumers are looking for the best product, at the best price, with the highest level of service and…
+            </div>
+            <div class="author">
+                <img src="../images/img_profilephoto_nora@2x.png" style="width: 40px;height: 40px;">
+                <p>
+                    <span>Nora Fang</span>
+                    <span>2017年6月8日</span>
+                </p>
+            </div>
+        </a>
+        <a href="article3.html" class="article">
+            <div class="article_img" style="background: url('../images/img_article3_img1.svg') no-repeat center / cover;">
+            </div>
+            <div>
+                Mobile POS 为你打造超实力零售店!
+            </div>
+            <div>
+                实体店的生存之道：要么方便到不用占用你任何时间，要么要么能给你极致的体验。
+            </div>
+            <div class="author">
+                <img src="../images/img_profilephoto_nora@2x.png" style="width: 40px;height: 40px;">
+                <p>
+                    <span>Nora Fang</span>
+                    <span>2017年6月8日</span>
+                </p>
+            </div>
+        </a>
+        <a href="article4.html" class="article">
+            <div class="article_img" style="background: url('../images/img_article4_img1.svg') no-repeat center / cover;">
+            </div>
+            <div>
+                从案例看 Mobile POS 如何促进实体零售店的销售额增长！
+            </div>
+            <div>
+                结账要排队对于顾客来说简直是噩梦 ，顾客的噩梦就是零售商的噩梦 － 尤其是对于商品定价不低的零售商来说更是如此。
+            </div>
+            <div class="author">
+                <img src="../images/img_profilephoto_nora@2x.png" style="width: 40px;height: 40px;">
+                <p>
+                    <span>Nora Fang</span>
+                    <span>2017年6月8日</span>
+                </p>
+            </div>
+        </a>
+        <a href="article5.html" class="article">
+            <div class="article_img" style="background: url('../images/img_article5_img1.svg') no-repeat center / cover;">
+            </div>
+            <div>
+                新零售时代：传统零售商拥有天时、地利、人和的优势
+            </div>
+            <div>
+                我们正处在一个未来会被称之为“零售复兴”的时代。互联网和移动设备及其他相关的硬件和软件已经完全变革了消费者与品牌和零售商的交易行为。
+            </div>
+            <div class="author">
+                <img src="../images/img_profilephoto_nora@2x.png" style="width: 40px;height: 40px;">
+                <p>
+                    <span>Nora Fang</span>
+                    <span>2017年6月8日</span>
+                </p>
+            </div>
+        </a>
+        <a href="article6.html" class="article">
+            <div class="article_img" style="background: url('../images/img_article6_img1.svg') no-repeat center / cover;">
+            </div>
+            <div>
+                Physical Store Will Always Exist
+            </div>
+            <div>
+                The physical stores will always exist, but its form needs to change. In this transformation, mobile is the real driving force!
+            </div>
+            <div class="author">
+                <img src="../images/img_profilephoto_nora@2x.png" style="width: 40px;height: 40px;">
+                <p>
+                    <span>Nora Fang</span>
+                    <span>2017年6月8日</span>
+                </p>
+            </div>
+        </a>
+    </section>
+    <footer>
+        <hr class="footer_hr">
+        <div class="about_us">
+            <ul>
+                <li><img src="../images/img_bottom_logo.svg"></li>
+            </ul>
+            <ul>
+                <li>关于我们</li>
+                <li>关于POSPi</li>
+                <li>合作伙伴</li>
+                <li>新闻报道</li>
+                <li>加入我们</li>
+            </ul>
+            <ul>
+                <li>联系我们</li>
+            </ul>
+            <ul>
+                <li style="color: #8C8C8C;">关注我们的社区</li>
+                <li style="clear: left;margin-left: 0;"><img src="../images/img_facebook_logo_Selected.svg" alt=""></li>
+                <li><img src="../images/img_LinkedIn_logo_Selected.svg" alt=""></li>
+                <li><img src="../images/img_WeChat_logo_Selected.svg" alt=""></li>
+                <li><img src="../images/img_youku_logo_Selected.svg" alt=""></li>
+                <li><img src="../images/img_youtube_logo_Selected.svg" alt=""></li>
+            </ul>
+        </div>
+        <hr class="footer_hr">
+        <div class="copyright">
+            © All rights reserved. | ICP证：沪ICP备15028992号-1
+        </div>
+    </footer>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script src="../js/interact.js"></script>
+</body>
+
+</html>

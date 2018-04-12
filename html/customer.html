@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- <link rel="stylesheet" type="text/css" href="../css/Normalize.css"> -->
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <style type="text/css">
+        .banner {
+            height: 60rem;
+            text-align: left;
+            overflow: hidden;
+            position: relative;
+            color: white;
+        }
+
+        .banner_content {
+            color: white;
+            width: 80rem;
+            margin: 21.6225rem auto;
+        }
+
+        .banner_content>p {
+            margin-bottom: 3.225rem;
+        }
+
+        .banner_content>p:last-child {
+            margin-bottom: 0;
+        }
+
+        .banner_content p:nth-child(1) {
+            font-family: PingFangSC-Semibold;
+            font-size: 48px;
+            letter-spacing: 0;
+        }
+
+        .banner_content p:nth-child(3) {
+            font-family: PingFangSC-Regular;
+            font-size: 24px;
+            letter-spacing: 5.33px;
+        }
+        /*        .content_item {
+            overflow: hidden;
+        }*/
+
+        .dark_bg {
+            background: #F6F6F6;
+        }
+
+        .content_item_text {
+            width: 80rem;
+            margin: 11.46rem auto;
+            overflow: hidden;
+        }
+
+        .content_item_text.wider {
+            width: 100%;
+            display: flex;
+            margin: 0;
+        }
+
+        .content_item_text img {
+            width: 100%;
+        }
+
+        .left {
+            width: 37.5%;
+        }
+
+        .right {
+            width: 62.5%;
+            padding: 14.16rem;
+            box-sizing: border-box;
+            padding-bottom: 0;
+        }
+
+        .content_item_text p {
+            margin-bottom: 3.17rem;
+        }
+
+        .content_item_text p:last-child {
+            margin-bottom: 0;
+        }
+
+        .content_item_text p:nth-child(1) {
+            font-family: PingFangSC-Semibold;
+            font-size: 36px;
+            color: #333333;
+            letter-spacing: 0;
+            font-weight: bold;
+        }
+
+        .content_item_text p:nth-child(3) {
+            font-family: PingFangSC-Regular;
+            font-size: 14px;
+            color: #333333;
+            letter-spacing: 3.11px;
+        }
+
+        footer {
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header_content">
+            <a href="home-page.html" style="display: flex;"><img class="logo" src="../images/img_Navigation_LOGO.svg"></a>
+            <ul class="header_nav">
+                <li class="nav_item"><a href="javascript:void(0)"><span>产品与服务</span></a>
+                    <ul class="nav_item_list" style="display: none;">
+                        <li><a href="all-in-one.html"><img src="../images/icon_Navigation_All-in-One@2x.png" data-src="../images/icon_Navigation_All-in-One_Selected@2x.png"></a></li>
+                        <li><a href="solution.html"><img src="../images/icon_Navigation_Solution@2x.png" data-src="../images/icon_Navigation_Solution_Selected@2x.png"></a></li>
+                        <li><a href="payment.html"><img src="../images/icon_Navigation_payment@2x.png" data-src="../images/icon_Navigation_payment_Selected@2x.png"></a></li>
+                        <li><a href="access.html"><img src="../images/icon_Navigation_Access@2x.png" data-src="../images/icon_Navigation_Access_Selected@2x.png"></a></li>
+                        <li><a href="service.html"><img src="../images/icon_Navigation_service@2x.png" data-src="../images/icon_Navigation_service_Selected@2x.png"></a></li>
+                    </ul>
+                </li>
+                <li class="nav_item"><a href="customer.html"><span>典型客户</span></a>
+                </li>
+                <li class="nav_item"><a href="source.html"><span>资源</span></a>
+                </li>
+                <li class="nav_item"><a href="javascript:void(0)">
+                    <span>硬件</span></a>
+                    <ul class="nav_item_list" style="display: none;">
+                        <li><a href="mobile-pos.html"><img src="../images/icon_Navigation_mpos@2x.png" data-src="../images/icon_Navigation_mpos_Selected@2x.png" alt=""></a></li>
+                        <li><a href="desktop-check.html"><img src="../images/icon_Navigation_Desktop@2x.png" data-src="../images/icon_Navigation_Desktop_Selected@2x.png" alt=""></a></li>
+                        <li><a href="printer.html"><img src="../images/icon_Navigation_Printer@2x.png" data-src="../images/icon_Navigation_Printer_Selected@2x.png" alt=""></a></li>
+                    </ul>
+                </li>
+                <li class="nav_item"><a href="javascript:void(0)"><span>关于</span></a>
+                    <ul class="nav_item_list" style="display: none;">
+                        <li><a href="introduce.html"><img src="../images/icon_Navigation_introduce@2x.png" data-src="../images/icon_Navigation_introduce_Selected@2x.png"></a></li>
+                        <li><a href="parter.html"><img src="../images/icon_Navigation_Partner@2x.png" data-src="../images/icon_Navigation_Partner_Selected@2x.png"></a></li>
+                        <li><a href="news.html"><img src="../images/icon_Navigation_Journalism@2x.png" data-src="../images/icon_Navigation_Journalism_Selected@2x.png"></a></li>
+                        <li><a href="join-us.html"><img src="../images/icon_Navigation_recruit@2x.png" data-src="../images/icon_Navigation_recruit_Selected@2x.png"></a></li>
+                    </ul>
+                </li>
+                <li class="nav_item"><a href="contact-us.html"><span>联系我们</span></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="content">
+        <section class="banner" style="background: url('../images/img_Customer_banner@2x.png') no-repeat center / cover;">
+            <div class="banner_content">
+                <p>共同的愿景变成了现实</p>
+                <p class="short_line_blue"></p>
+                <p>我们致力于与客户建立长期的合作关系，成为他们信赖的合作伙伴。独特的伙伴关系让我们打造出专属团队，以掌握和维护面向特定客户的专业知识，随着时间的推移寻求整体流程的改进和效率的提升。</p>
+            </div>
+        </section>
+        <section class="content_item ">
+            <div class="content_item_text">
+                <p style="background: white url('../images/img_Customer_img1@2x.png') no-repeat center / 100%;">
+                    <img src="../images/img_Customer_img1@2x.png" style="position: relative;z-index: -1; width: 100%;">
+                </p>
+            </div>
+        </section>
+        <section class="content_item  ">
+            <div class="content_item_text wider dark_bg">
+                <div class="left" style="background: white url('../images/img_Customer_img2@2x.png') no-repeat center / 100%;">
+                    <img src="../images/img_Customer_img2@2x.png" style="position: relative;z-index: -1; width: 100%;">
+                </div>
+                <div class="right">
+                    <p>innisfree</p>
+                    <p class="short_line_blue"></p>
+                    <p>
+                        innisfree（悦诗风吟）是韩国化妆品品牌，也是由韩国第一化妆品集团AmorePacific爱茉莉太平洋集团潜心研制的自然主义化妆品，是高科技和自然的完美结合。上海--(美国商业信息)--在苹果零售店首次实施的无柜台化、移动化收银打造了全新的购物体验。这个完全颠覆了传统的创新收银模式,现在正式在Innisfree 门店得到实施运用，将客户体验提升到了前所未有的新高度。悦诗风吟作为爱茉莉太平洋旗下成长最快的品牌之一，Innisfree 延续了这种创新精神，在过去四年内持续呈几何级数增长，尤其是在中国市场， Innisfree 十分重视顾客满意度，Mobile POS的使用能够为零售店的每个顾客提供更加个性化、互动性更好的高标准服务。店员目前都配备了一台小巧的 Mobile POS ，不仅成功地消除了排队现象，而且店内人员可以随时随地回应处理客户的各类需求。”
+                        <br>
+                        <br> POSPi创始人邵雷敏表示：“ POSPi是专注于移动零售科技的创新型驱动公司，我们在技术上解决了大型跨国零售商如何在既存的IT业务系统下，无缝对接原有系统的问题，并成功将各种支付方案集成到一个平台上操作。随着innisfree的投入使用，验证了整个系统的安全性、可靠性和便利性。”
+                    </p>
+                    <p class="know_more"><a href="all-in-one.html">查看解决方案</a></p>
+                </div>
+            </div>
+        </section>
+        <section class="content_item">
+            <div class="content_item_text wider" style="flex-direction: row-reverse;">
+                <div class="left" style="background: white url('../images/img_Customer_img3@2x.png') no-repeat center / 100%;">
+                    <img src="../images/img_Customer_img3@2x.png" style="position: relative;z-index: -1; width: 100%;">
+                </div>
+                <div class="right">
+                    <p>M.A.C</p>
+                    <p class="short_line_blue"></p>
+                    <p>
+                        M.A.C 是美国雅诗兰黛公司旗下的化妆品旗舰品牌，以美妆、彩妆闻名，同时雅诗兰黛公司是全球领先的大型生产商和销售商。雅诗兰黛旗下 M.A.C 品牌从1994年起作为雅诗兰黛集团的一部分，在全球90个国家销售。其品牌并在中国与POSPi 联手打造了线上线下完美融合的智慧门店。融合大数据、智能软件和硬件配给并通过CRM实现店铺互联网化、数据化、电子化的消费管理和营销服务平台，其核心是彻底解决商户和消费者的交易管理问题，专注于顾客的极致体验和为顾客服务的卓越意识。
+                        <br>
+                        <br> 通过移动设备，M.A.C 店员可以登录手中的 Mobile POS 并立即访问顾客和产品信息，同时可以跟踪到顾客的购物偏好，然后使用这些数据来鼓励未来的潜在客户，增进品牌产品对顾客的持续吸引力。
+                    </p>
+                    <p class="know_more"><a href="all-in-one.html">查看解决方案</a></p>
+                </div>
+            </div>
+        </section>
+        <section class="content_item ">
+            <div class="content_item_text wider dark_bg">
+                <div class="left" style="background: white url('../images/img_Customer_img4@2x.png') no-repeat center / 100%;">
+                    <img src="../images/img_Customer_img4@2x.png" style="position: relative;z-index: -1; width: 100%;">
+                </div>
+                <div class="right">
+                    <p>新生活</p>
+                    <p class="short_line_blue"></p>
+                    <p>
+                        新生活于1994年5月30日在韩国创建，二十多年来一直以优质的产品和优秀的企业形象屹立在中国的化妆品界，在中国设立了近60家分支机构，超过900余名的员工，年销售额超过50亿人民币，为顾客提供优质的服务。作为纯洁、健康的企业，一直以帮助顾客实现夙愿和以顾客为中心的文化风情闻名，新生活不同于其他品牌的营销模式，而是采用直销的方式，通过经销商来带动产业链，这就加大了对经销商及顾客的管理难度。
+                        <br>
+                        <br> POSPi 联合新生活集团共同打造了真正适用于直销模式的智能解决方案，建立个性化经销商平台和微信 CRM 系统以及 SCM数据分析引擎，实现了线下的个性化一对一导购式全渠道销售以及线上的软文营销和动态客户管理，帮助经销商提高了会员流入量、会员活跃度，强化运营部门的的管理体系。
+                    </p>
+                    <p class="know_more"><a href="all-in-one.html">查看解决方案</a></p>
+                </div>
+            </div>
+        </section>
+        <section class="content_item ">
+            <div class="content_item_text">
+                <p style="background: white url('../images/img_Customer_img5@2x.png') no-repeat center / 100%;">
+                    <img src="../images/img_Customer_img5@2x.png" style="position: relative;z-index: -1; width: 100%;">
+                </p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <hr class="footer_hr">
+        <div class="about_us">
+            <ul>
+                <li><img src="../images/img_bottom_logo.svg"></li>
+            </ul>
+            <ul>
+                <li>关于我们</li>
+                <li>关于POSPi</li>
+                <li>合作伙伴</li>
+                <li>新闻报道</li>
+                <li>加入我们</li>
+            </ul>
+            <ul>
+                <li>联系我们</li>
+            </ul>
+            <ul>
+                <li style="color: #8C8C8C;">关注我们的社区</li>
+                <li style="clear: left;margin-left: 0;"><img src="../images/img_facebook_logo_Selected.svg" alt=""></li>
+                <li><img src="../images/img_LinkedIn_logo_Selected.svg" alt=""></li>
+                <li><img src="../images/img_WeChat_logo_Selected.svg" alt=""></li>
+                <li><img src="../images/img_youku_logo_Selected.svg" alt=""></li>
+                <li><img src="../images/img_youtube_logo_Selected.svg" alt=""></li>
+            </ul>
+        </div>
+        <hr class="footer_hr">
+        <div class="copyright">
+            © All rights reserved. | ICP证：沪ICP备15028992号-1
+        </div>
+    </footer>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script src="../js/interact.js"></script>
+</body>
+
+</html>
